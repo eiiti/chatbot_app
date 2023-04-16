@@ -10,7 +10,7 @@ def generate_response(message):
     response = openai.Completion.create(
         engine="text-davinci-002",
         prompt=f"User: {message}\nChatbot:",
-        max_tokens=200,
+        max_tokens=1000,
         n=1,
         stop=None,
         temperature=0.5,
